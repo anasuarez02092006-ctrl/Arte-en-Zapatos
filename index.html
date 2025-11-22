@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arte en Zapatos</title>
+
+<!-- Fuentes Google -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Librerías AOS y Swiper -->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+</head>
+<body>
+
+<!-- BOTÓN WHATSAPP -->
+<a href="https://wa.me/573174851298" class="btn-whatsapp" target="_blank">💬</a>
+
+<!-- HEADER -->
+<header>
+  <nav>
+    <h1 class="logo">Arte en Zapatos</h1>
+    <ul class="menu">
+      <li><a href="#catalogo">Catálogo</a></li>
+      <li><a href="#carrito">Carrito</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><button id="darkModeBtn">🌙</button></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- BANNER PRINCIPAL -->
+<section class="hero" data-aos="fade-up">
+  <div class="hero-text">
+    <h2>Nuevos modelos cada semana</h2>
+    <p>Envíos a todo el país</p>
+  </div>
+  <div class="hero-favorites">
+    <img src="img/AF1-1.png" alt="Favorito 1">
+    <img src="img/1000-.png" alt="Favorito 2">
+    <img src="img/retro4-6.png" alt="Favorito 3">
+  </div>
+</section>
+
+<!-- CARRUSEL PROMOCIONES -->
+<section class="promociones" data-aos="fade-up">
+  <h2>Promociones de la semana</h2>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/vomero3.png" alt="Promo 1"></div>
+      <div class="swiper-slide"><img src="img/vomero2.png" alt="Promo 2"></div>
+      <div class="swiper-slide"><img src="img/vomero1.png" alt="Promo 3"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<!-- CATÁLOGO -->
+<section id="catalogo" data-aos="fade-up">
+  <h2>Catálogo</h2>
+  <div id="filtros">
+    <button onclick="filterProducts('Todos')">Todos</button>
+    <button onclick="filterProducts('Nike')">Nike</button>
+    <button onclick="filterProducts('New Balance')">New Balance</button>
+    <button onclick="filterProducts('Personalizables')">Personalizables</button>
+    <button onclick="filterProducts('Diseñador')">Diseñador</button>
+  </div>
+  <div class="grid" id="product-container"></div>
+</section>
+
+<!-- CARRITO -->
+<section id="carrito" data-aos="fade-up">
+  <h2>Carrito de Compras</h2>
+  <div id="cart-list"></div>
+  <p id="total"></p>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" data-aos="fade-up">
+  <h2>Contacto</h2>
+  <form id="form-contacto">
+    <input type="text" placeholder="Nombre" required>
+    <input type="email" placeholder="Correo" required>
+    <textarea placeholder="Mensaje"></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<!-- REDES SOCIALES -->
+<section class="social">
+  <a href="https://www.instagram.com" target="_blank">Instagram</a>
+  <a href="https://www.tiktok.com" target="_blank">TikTok</a>
+  <a href="https://www.facebook.com" target="_blank">Facebook</a>
+  <a href="https://wa.me/573174851298" target="_blank">WhatsApp</a>
+</section>
+
+<!-- JS Librerías -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
